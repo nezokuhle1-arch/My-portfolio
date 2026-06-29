@@ -53,3 +53,89 @@
     /* Animation */
     --transition: 0.25s ease;
   }
+
+/* ── CSS VARIABLES (Dark Mode) ── */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --bg:          #1a2130;
+      --surface:     #1e2840;
+      --card:        #1e2840;
+  
+      --shadow-out:  6px 6px 14px #111824, -6px -6px 14px #263050;
+      --shadow-in:   inset 4px 4px 10px #111824, inset -4px -4px 10px #263050;
+      --shadow-card: 8px 8px 20px #111824, -8px -8px 20px #263050;
+  
+      --blue:       #4f9cf9;
+      --blue-dark:  #2f7de1;
+      --blue-light: #1a3a6e;
+  
+      --text:       #e2eaf5;
+      --text-muted: #8ca0bb;
+      --border:     #2a3a54;
+  
+      --highlight-bg:  #1a3a6e;
+      --highlight-txt: #7bb8ff;
+  
+      --nav-bg: rgba(26, 33, 48, 0.94);
+  
+      --footer-bg:  #111824;
+      --footer-txt: #8ca0bb;
+  
+      --badge-bg:  #1a3a6e;
+      --badge-txt: #7bb8ff;
+  
+      --input-bg: #1e2840;
+  
+      --overlay: rgba(5, 10, 20, 0.65);
+    }
+  }
+  
+  /* ── BASE RESET ── */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.7;
+  }
+  
+  /* ── ACCESSIBILITY ── */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    background: var(--blue);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    font-weight: 600;
+    z-index: 9999;
+    transition: top 0.2s;
+  }
+  .skip-link:focus {
+    top: 0;
+    color: #fff;
+  }
+  
+  :focus-visible {
+    outline: 3px solid var(--blue);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+    html {
+      scroll-behavior: auto;
+    }
+  }
