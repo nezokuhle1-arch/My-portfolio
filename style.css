@@ -348,3 +348,180 @@
     box-shadow: 0 8px 28px rgba(47, 125, 225, 0.65);
     color: #ffffff !important;
   }
+
+  /* ================================================
+   SHARED SECTION UTILITIES
+   ================================================ */
+
+.section-pad {
+    padding: 90px 0;
+  }
+  
+  .section-tag {
+    display: inline-block;
+    background: var(--highlight-bg);
+    color: var(--highlight-txt);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 0.3rem 0.95rem;
+    border-radius: 50px;
+    margin-bottom: 0.6rem;
+  }
+  
+  .section-title {
+    font-size: clamp(1.75rem, 4vw, 2.6rem);
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+  
+  /* ================================================
+     ABOUT SECTION
+     ================================================ */
+  
+  #about {
+    background: var(--surface);
+  }
+  
+  /* Card */
+  .about-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 2.5rem;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .about-card {
+      border-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+  
+  /* Left column padding */
+  .left-col {
+    padding-right: 1.5rem;
+  }
+  
+  /* Avatar circle */
+  .about-avatar-wrap {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: var(--card);
+    box-shadow: var(--shadow-out);
+    padding: 5px;
+    margin: 0 auto 1.4rem;
+    overflow: hidden;
+  }
+  
+  .about-avatar-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Contact list */
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    text-align: left;
+  }
+  
+  .contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  
+  .contact-detail i {
+    color: var(--blue);
+    font-size: 1rem;
+    min-width: 18px;
+    margin-top: 2px;
+  }
+  
+  .contact-detail strong {
+    color: var(--text);
+  }
+  
+  /* Skills section */
+  .skills-wrap {
+    text-align: left;
+  }
+  
+  .skills-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Badges */
+  .skill-badge {
+    display: inline-block;
+    background: var(--badge-bg);
+    color: var(--badge-txt);
+    border-radius: 50px;
+    padding: 0.28rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 0.2rem;
+    box-shadow: 3px 3px 6px #c8d2e0, -2px -2px 5px #ffffff;
+    transition: transform var(--transition);
+  }
+  
+  .skill-badge:hover {
+    transform: translateY(-2px);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .skill-badge {
+      box-shadow: 3px 3px 6px #111824, -2px -2px 5px #263050;
+    }
+  }
+  
+  /* Vertical divider */
+  .col-divider {
+    width: 1px;
+    background: var(--border);
+    align-self: stretch;
+  }
+  
+  /* Right column */
+  .right-col {
+    padding-left: 2rem;
+  }
+  
+  .about-subheading {
+    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+    font-weight: 800;
+    color: var(--text);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  
+  .about-para {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.85;
+  }
+  
+  /* Mobile stacking */
+  @media (max-width: 767.98px) {
+    .about-card { padding: 1.8rem 1.3rem; }
+    .left-col { padding-right: 0; margin-bottom: 2rem; }
+    .right-col { padding-left: 0; }
+    .col-divider { display: none; }
+    .section-pad { padding: 60px 0; }
+  }
