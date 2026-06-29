@@ -288,21 +288,6 @@
     max-width: 760px;
   }
   
-  /* Small pill tag above headline */
-  .hero-eyebrow {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.12);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 50px;
-    padding: 0.35rem 1.1rem;
-    font-size: 0.88rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    margin-bottom: 1.2rem;
-    backdrop-filter: blur(6px);
-  }
-  
   /* Main headline */
   .hero-name {
     font-size: clamp(2.4rem, 7vw, 5rem);
