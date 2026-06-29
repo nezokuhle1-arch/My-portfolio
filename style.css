@@ -1,0 +1,55 @@
+/* ================================================
+   NEZOKUHLE TSHUKULWANA — PORTFOLIO
+   styles.css
+   ================================================ */
+
+/* ── CSS VARIABLES (Light Mode) ── */
+:root {
+    /* Backgrounds */
+    --bg:          #eaf0f7;
+    --surface:     #f0f4fa;
+    --card:        #f0f4fa;
+  
+    /* Neomorphic shadows */
+    --shadow-out:  6px 6px 14px #c8d2e0, -6px -6px 14px #ffffff;
+    --shadow-in:   inset 4px 4px 10px #c8d2e0, inset -4px -4px 10px #ffffff;
+    --shadow-card: 8px 8px 20px #c8d2e0, -8px -8px 20px #ffffff;
+  
+    /* Blue accent */
+    --blue:        #2f7de1;
+    --blue-dark:   #1a5fbf;
+    --blue-light:  #dbeafe;
+  
+    /* Typography */
+    --text:        #1e2a3a;
+    --text-muted:  #6b7a8d;
+    --border:      #d4dde8;
+  
+    /* Highlight label (pale blue tag) */
+    --highlight-bg:  #dbeafe;
+    --highlight-txt: #1a5fbf;
+  
+    /* Navbar */
+    --nav-bg: rgba(240, 244, 250, 0.92);
+  
+    /* Footer */
+    --footer-bg:  #1e2a3a;
+    --footer-txt: #a8b8cc;
+  
+    /* Badges */
+    --badge-bg:  #dbeafe;
+    --badge-txt: #1a5fbf;
+  
+    /* Form inputs */
+    --input-bg: #f0f4fa;
+  
+    /* Hero overlay */
+    --overlay: rgba(10, 18, 34, 0.58);
+  
+    /* Shape */
+    --radius:    16px;
+    --radius-sm: 10px;
+  
+    /* Animation */
+    --transition: 0.25s ease;
+  }
