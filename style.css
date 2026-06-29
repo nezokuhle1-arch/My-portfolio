@@ -525,3 +525,151 @@
     .col-divider { display: none; }
     .section-pad { padding: 60px 0; }
   }
+
+  /* ================================================
+   PROJECTS SECTION
+   ================================================ */
+
+#projects {
+    background: var(--bg);
+  }
+  
+  .section-sub {
+    color: var(--text-muted);
+    font-size: 0.97rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Project card */
+  .project-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 28px #c0cbdb, -6px -6px 20px #ffffff;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .project-card {
+      border-color: rgba(255, 255, 255, 0.05);
+    }
+    .project-card:hover {
+      box-shadow: 10px 10px 24px #0e1520, -6px -6px 18px #293456;
+    }
+  }
+  
+  /* Banner image */
+  .project-img-wrap {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .project-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .project-card:hover .project-img-wrap img {
+    transform: scale(1.05);
+  }
+  
+  /* Tag pill on image */
+  .project-tag {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    background: rgba(10, 18, 50, 0.75);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.25rem 0.7rem;
+    border-radius: 50px;
+    backdrop-filter: blur(6px);
+    letter-spacing: 0.3px;
+  }
+  
+  /* Card body */
+  .project-body {
+    padding: 1.35rem 1.4rem 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+  }
+  
+  .project-sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    flex: 1;
+  }
+  
+  /* Push buttons to bottom of card */
+  .project-actions {
+    display: flex;
+    gap: 0.55rem;
+    margin-top: auto;
+  }
+  
+  /* Primary button */
+  .btn-primary-neo {
+    background: var(--blue);
+    color: #fff !important;
+    border: none;
+    border-radius: 50px;
+    padding: 0.45rem 1.1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    box-shadow: 3px 3px 8px rgba(47, 125, 225, 0.35);
+    transition: background var(--transition), transform var(--transition);
+  }
+  
+  .btn-primary-neo:hover {
+    background: var(--blue-dark);
+    transform: translateY(-1px);
+    color: #fff !important;
+  }
+  
+  /* Outline button */
+  .btn-outline-neo {
+    background: transparent;
+    color: var(--blue) !important;
+    border: 2px solid var(--blue);
+    border-radius: 50px;
+    padding: 0.38rem 0.9rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: background var(--transition), color var(--transition), transform var(--transition);
+  }
+  
+  .btn-outline-neo:hover {
+    background: var(--blue);
+    color: #fff !important;
+    transform: translateY(-1px);
+  }
